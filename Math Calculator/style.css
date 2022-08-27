@@ -1,0 +1,17 @@
+*{
+    position: relative;
+    overflow: hidden;
+    text-align:center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.selectButtons{
+    padding-top: 3vh;
+}
+
+.row{
+    margin: 30vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
