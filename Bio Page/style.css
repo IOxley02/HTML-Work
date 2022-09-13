@@ -9,8 +9,8 @@ header#hero {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 3vh;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   top: -30vh;
   padding: 20%;
   color: white;
@@ -19,26 +19,28 @@ header#hero {
 }
 /*Properties for the text in the hero image */
 .hero h3 {
-  font-size: 14vh;
+  font-size: 10vh;
 }
 
 /*Properties for the image used as the hero */
 .hero img {
-  top: -20vh;
+  top: -15vh;
   border-radius: 50%;
   border-width: 10vh;
-  border-color: purple;
   height: 25vh;
-  margin: -30vh;
+  margin-top: 10vh;
+  margin-bottom: -10vh;
   position: relative;
+  align-items: center;
 }
 
 .hero h3 {
-  padding: -20vh;
-  font-size: 
+  font-size: 10vh;
+  margin-top: -3vh;
 }
 body {
-  background-color: #fafafa;
+  background-color: #292929;
+  color: white;
 }
 
 /*Creates the header at the top of the each section */
@@ -73,9 +75,46 @@ h3{
   font-size: 20px;
   margin-top: 20px;
 }
+
+.why {
+  margin-top: 10vh;
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  background: black;
+  overflow: hidden;
+}
+.why canvas {
+  height: 130vh;
+  width: 100%;
+}
+.why-text{
+  top: -95vh;
+  height: 35vh;
+  margin-bottom: -45vh;
+  position: relative;
+}
+.why h3{
+  background: black;
+  border-radius: 50%;
+  font-size: 7vh;
+  padding: 5%;
+}
+.why p {
+  background: black;
+  border-radius: 30%;
+  font-size: 13px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-width: 10%;
+}
+
 .skills {
-  background-color: #EAEAEA;
+  background-color: #4C4C4C;
   border-radius: 50px;
+  margin: 5%;
 }
 
 /*Skills image properties */
@@ -121,7 +160,6 @@ h3{
 /*Properties for the icons in contact */
 
 .icons {
-  font-size: 65px;
   margin: 50px;
   text-align: center;
   background-color: #59AAF7;
@@ -144,6 +182,6 @@ h3{
 
  /*text above the buttons*/
 .icons {
-  font-size: 3.5vh;
+  font-size: 3vh;
   color: white;
 }
