@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<!-- Create a title in the browser Tab  -->
+<title>PerryScope</title>
+   
+<!-- **VERTEX SHADER** -->
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+uniform float theta;			
+attribute vec2 vPosition;
+uniform vec2 centers;
+
+attribute vec3 vColor;
+varying vec4 color;
+ 
+void main()
+{
+
+	//build the rotation based on the input angle
+	float s = sin(theta);
+    float c = cos(theta);
+
+	//apply a rotation matrix to the input position, this is the same as what's provided in rotatingSquare.html but with the centers
+	gl_Position.x =  c * ( vPosition.x + centers[0] ) - s * ( vPosition.y + centers[1] );
+    gl_Position.y =  s * ( vPosition.x + centers[0] ) + c * ( vPosition.y + centers[1] );
+    gl_Position.z = 0.0;
+    gl_Position.w = 1.0;
+
+	//Determines the color based on the position of the object. We use abs so the colors appear the same when x/y is positive or negative
+	//xCol is high when x is 1 or -1, meaing that there is a light shade of red. 
+	//yCol is high when y is 1 or -1, meaing that there is a light shade of green.
+	float xCol = 1.0 - abs(gl_Position.x);
+	float yCol = 1.0 - abs(gl_Position.y);
+	color = vec4(vColor[0] * xCol, vColor[1] * yCol, vColor[2], 1.0);
+
+}
+</script>
+
+<!-- **FRAGMENT SHADER** -->
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+	precision mediump float;
+	varying vec4 color;
+	
+	void main()
+	{
+		gl_FragColor = color;
+	}
+</script>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="perryscope.js"></script>
+
+<style>
+body
+{
+    font-style: normal;
+    font-family: sans-serif;
+    color: white;
+    padding: 0 1em;
+    line-height: 1.25em;
+}
+</style>
+</head>   
+
+<body>
+
+ <canvas id="gl-canvas" width="500" height="500" style="border:2px solid #000000;"> 
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+
+</body>
+</html>

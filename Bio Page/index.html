@@ -1,238 +1,565 @@
 <!--**THIS IS WORK IN PROGRESS**, I intend to continue updating this throughout college and making improvements as I learn more about web development -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">  
-    <title>Ian Oxley Bio</title>  
-    <!-- Bootstrap and Icons link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Custom styles (these can extend the default Bootstrap styles) -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ian Oxley Bio</title>
+  <!-- Bootstrap and Icons link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-  <body class="scroll-top"
-  data-bs-spy="scroll"
-  data-bs-target=".navbar"
-  data-bs-offset= "100">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Custom styles (these can extend the default Bootstrap styles) -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="scroll-top" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
   <!--Navbar-->
-   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-      <div class= "container">
-        <!--Creates the home icon in the top left corner -->
-        <a href="#home" class = "navbar-brand">
-          <i class="bi bi-house-door"></i>
-        </a>
-        <!--Creates the hamburger button in the top right (when small) -->
-        <button class= "navbar-toggler"
-          data-bs-toggle= "collapse"
-          data-bs-target= "#nav-collapse">
-          <span class= "navbar-toggler-icon"> </span>
-        </button>
-        <!--creates the links within the navbar to navagate across the page -->
-        <div id = "nav-collapse" class="collapse navbar-collapse">
-          <div class="navbar-nav ms-auto">
-            <a href="#mission-target" class = "nav-link"> Mission</a>
-            <a href="#why-target" class = "nav-link"> Why </a>
-            <a href="#skills-target" class = "nav-link"> Skills </a>
-            <a href="#inspiration-target" class = "nav-link"> Inspiration </a>
-            <a href="#contact-target" class = "nav-link"> Contact </a>
-          </div>
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <!--Creates the home icon in the top left corner -->
+      <a href="#home" class="navbar-brand">
+        <i class="bi bi-house-door"></i>
+      </a>
+      <!--Creates the hamburger button in the top right (when small) -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <!--creates the links within the navbar to navagate across the page -->
+      <div id="nav-collapse" class="collapse navbar-collapse">
+        <div class="navbar-nav ms-auto">
+          <a href="#introduction-target" class="nav-link"> Introduction</a>
+          <a href="#expertise-target" class="nav-link"> Expertise </a>
+          <a href="#experience-target" class="nav-link"> Experience </a>
+          <a href="#projects-target" class="nav-link"> Projects </a>
+          <a href="#contact-target" class="nav-link"> Contact </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!--Hero-->
-	<div class="hero">
-    <div id= "home"></div>
-    <header id= "hero">
-      <img src="img/profilepic.jpg" alt = "Programming image."></img>
-      <h3 class = "display-2"> Ian Oxley </h3>
-      <p> Computer Science undergraduate </p>
+  <div class="hero">
+    <div id="home"></div>
+    <header id="hero">
+      <img src="img/profilepic.jpg" alt="Programming image."></img>
+      <h2 class="display-2"> Hi, I'm Ian </h2>
+      <p> A computer science graduate student at ASU</p>
     </header>
-	</div>
-  
-	<!--Mission/Meet-me-->
-  <div id="mission-target"> </div>
-  <div class= "mission">
-    <div class= "container">
-      <h2> My Mission </h2>
-      <div class= "row">
-        <div class= "col-md-6">
+  </div>
+
+  <!--Mission/Meet-me-->
+  <div id="introduction-target"> </div>
+  <div class="introduction">
+    <div class="container">
+      <h1> Introduction </h1>
+      <div class="row">
+        <div class="col-md-6">
           <img src="img/Mission.jpg" alt="Programming Image.">
         </div>
-        <div class= "col-md-6">
-          <p> From the beginning, my mission has been to be proud of my profession and ensure my work is outstanding.
-            I am confident in my current skillset and look foward to showcasing my knowledge in the future.
-            While studying with ASU, I've taken up personal projects to exercise my skills and challenge myself to learn something new. </p>
-          <p> While working, I developed a belief in perfection. I program on the basis that the user comes first: How I can make their experience easy, appealing, and with 100% accuracy.
-            I seek opportinities which I can bring my best and be apart of something impacting everyday lives. </p>
+        <div class="col-md-6">
+          <p>
+            Hello, I'm thrilled you've decided to check out my portfolio. I'm Ian, a top-performing computer science
+            graduate student at ASU and
+            previous intern with Iridium Satellite Communications, finishing up my Master's this December 2024.
+          </p>
+          <p>
+            My passion for problem solving and innovation has driven my success, enabling me to lead development of a
+            REST API Gateway
+            during my internship. My growing curiosity in technology has led me to diverse projects, including creating
+            complex
+            cloud systems, developing full-stack applications, and programming complex algorithms. Each project presents
+            a unique opportunity
+            to enhance my technical knowledge and leave my footprint in an evolving technical landscape.
+          </p>
+          <p>
+            Connect with me! We can discuss opportunities and ideas for collaboration.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!--Why Computer Science-->
-  <div id="why-target"> </div>
-  <div class="why">
-    <div class="matrix-area">
-      <!--Creates the background, see script file for code-->
-      <canvas id="Matrix"></canvas>
-      <script src="./index.js"></script>
-      <div class= "container">
-        <div class="why-text">
-          <h3> Why Computer Science?</h3>
-          <p>I grew up on computers, spending my time browsing websites, watching youtube, pretending I'm an artist, or most of all playing video games.
-            When I was young, the internet always fascinated me, I could play my games with <b><i>anyone</i></b>, meeting people who lived in different states, or even coutries.
-            Also the sheer magnitude of content I had available to me. Games, education, social media, you name it, the internet has it all at the tap of a screen.
-            But, when I was older, I realized Computer Science is a lot of math - <i>So what kept me here?</i>
-            Well thinking back to art, I realized that programming is just a means for <i>non-artistic</i> people to create something utilizing mathematics.
-            Artists have their five phases: <i>inspiration, percolation, preparation, creation, and reflection</i>, and I believe programming also has five phases.
-            starting with coming up with the idea, makeing diagrams, determining what environment to use, codeing, and finishing off with debugging - <i>pretty similar if you ask me</i>. 
-            Also, both have that same <b>satisfaction</b> when it all comes together, producing a great end result and considering <i>"done"</i>. Well maybe not done since programs always have room for improvement.
-            Anyways, programming is a means for me to create and that's what I like about it. The thought of users visiting my website, or using my programs, that's what keeps me here.
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Skills section -->
+  <!-- Expertise section -->
   <!-- **NOTE**: I wasn't able to get the images perfect for all the different interfaces -->
-  <div id="skills-target"> </div>
-  <div class="skills">
+  <div id="expertise-target"> </div>
+  <div class="expertise">
     <!--Header -->
-    <div class= "container">
-      <h2>Skills</h2>
-      <h3>
+    <div class="container">
+      <h1>Expertise</h1>
+      <h2>
         <a href="ian_oxley_resume.pdf" download>
           Resume
         </a>
-      </h3>
-      <div class= "row">
+      </h2>
+      <div class="row">
         <!--C++ -->
-        <div class= "col-md-6 col-xl-3">
-          <img src="img/C++.png" alt="C++ Image.">
+        <div class="col-md-6 col-xl-3">
+          <img src="img/C++.png" alt="C++ Image." title="C++">
           <p>C++, creating complex algorithms utilizing Visual Studios and GDB</p>
         </div>
         <!--HTML -->
-        <div class= "col-md-6 col-xl-3">
-          <img src="img/Swift.png" alt="HTML Image.">
+        <div class="col-md-6 col-xl-3">
+          <img src="img/swift.png" alt="HTML Image." title="SwiftUI">
           <p>App development, utilizing Swift, Storyboard, and MVC architecture</p>
         </div>
-        <!--Discrete Math -->
-        <div class= "col-md-6 col-xl-3">
-          <img src="img/Python.png" alt="Python logo Image.">
-          <p>Python, compatability with script files and parsing csv files</p>
+        <!--Python -->
+        <div class="col-md-6 col-xl-3">
+          <img src="img/python.png" alt="Python logo Image." title="Python">
+          <p>Python, writing algorithms, machine learning, and automation scripts</p>
         </div>
         <!--Java -->
-        <div class= "col-md-6 col-xl-3">
-          <img src="img/Java.png" alt="Java Image.">
-          <p>Java, building interfaces utilizing java fx and JUnit test cases </p>
+        <div class="col-md-6 col-xl-3">
+          <img src="img/Java.png" alt="Java Image." title="Java">
+          <p>Java, foundational OOP and Rest APIs in Spring Boot knowledge</p>
+        </div>
+      </div>
+      <div class="row">
+        <!--AWS -->
+        <div class="col-md-6 col-xl-3">
+          <img src="img/aws.jpg" alt="C++ Image." title="AWS">
+          <p>AWS, designing applications on Lambda, EC2, S3, and Flask on Python</p>
+        </div>
+        <!--Docker -->
+        <div class="col-md-6 col-xl-3">
+          <img src="img/docker.jpg" alt="HTML Image." title="Docker">
+          <p>Docker, creating docker containers and deploying docker images on AWS</p>
+        </div>
+        <!--Linux -->
+        <div class="col-md-6 col-xl-3">
+          <img src="img/linux.png" alt="Python logo Image." title="Linux">
+          <p>Linux, writing shell script files and performing essential tasks</p>
+        </div>
+        <!--Github -->
+        <div class="col-md-6 col-xl-3">
+          <img src="img/github.png" alt="Java Image." title="Git">
+          <p>Git, maintaining source control and constructing CI/CD pipelines </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!--Below is all the necessary information regarding the inspiration section-->
-  <div id="inspiration-target"></div>
-  <div class="inspiration">
-        <div class="container">
-          <h2>Inspiration</h2>
-          <!--Carousel content below -->
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/Ronaldo.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Christiano Ronaldo</h5>
-                  <p><em>"Your love makes me strong. Your hate makes me unstoppable"</em></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/Kobe.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Kobe Bryant</h5>
-                  <p><em>“Everything negative – pressure, challenges – is all an opportunity for me to rise”</em></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/Jobs.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Steve Jobs</h5>
-                  <p><em>“We’re here to put a dent in the universe. Otherwise why else even be here?”</em></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <div id="contact-target"> </div>
-  <div class="contact">
+  <!-- Experience section -->
+  <div id="experience-target"> </div>
+  <div class="experience">
     <!--Header -->
-    <div class= "container">
-      <h2>Contact</h2>
-      <!-- Buttons -->
-      <div class= "icons">
-        <div class= "row">
-          <div class="col-md-6 col-xl-3">
-            <p>E-mail:</p>
-            <a href="mailto:ioxley@asu.edu" type="button" class="btn btn-light btn-lg">
-              <i class="bi bi-envelope"></i>
-            </a>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <p>Phone:</p>
-            <a href="tel:+1480-352-4731" type="button" class="btn btn-light btn-lg">
-              <i class="bi bi-telephone"></i>
-            </a>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <p>Linkedin:</p>
-            <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='https://www.linkedin.com/in/ian-oxley-9a3bb721b/';">
-              <i class="bi bi-linkedin"></i>
-            </button>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <p>GitHub:</p>
-            <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='https://github.com/IOxley02/';">
-              <i class="bi bi-github"></i>
-            </button>
-          </div>
+    <h1>Experience</h1>
+    <div class="experience-logos">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/Iridium_Logo.png" alt="Nodejs Image." title="Iridium Satellite">
+          <p>
+            I had the opportunity to work with Iridium's B/OSS team as an intern from May 2023 until February 2024.
+            During this time, I applied and expanded many
+            of the skills I've learned at school. The team followed agile methodologies, meeting up daily for standup,
+            splitting work into
+            by-weekly sprints, retrospectives, and JIRA to coordinate the efforts. This experience allowed me to grow my
+            professional network, connect with
+            inspirational people, and gain a deeper understanding of how a professional environment operates.
+          </p>
+          My responsibilities included:
+          <ul>
+            <li>
+              I was leading the development efforts of a Spring Boot API Gateway, optimizing and authenticating incoming
+              and outgoing API
+              requests between user transactions and the company's MySQL databases as SOAP and JSON requests. </li>
+            <ul>
+              <li>My responsibilities included lots of development tasks, creating test cases,
+                constructing CI/CD pipelines, managing dev environment, writing documentation, and reporting progress to
+                the team.
+              </li>
+            </ul>
+            <li>
+              I conducted ample research on security protocols, leveraging HashiCorp Vault to securely fetch database
+              credentials utilizing
+              Kubernetes wrapped-token authentication and bi-directional TLS.
+            </li>
+            <li>
+              With a small group, we proposed the integration of a new asset management system to company leadership.
+            </li>
+            <ul>
+              <li>Responsible for creating requirements for the new system and drafting a plan on how to integrate
+                current assets to it,
+                and reaching out to third party asset management vendors to receive quotes for calculations.
+              </li>
+            </ul>
+          </ul>
+          <p>
+            These projects not only expanded my technical skills, but also gave me the responsibility of ensuring their
+            success. I took the
+            lead for setting up and conducting meetings, where I provided a progress update, showcased demos, and
+            discussed the next steps.
+            In summary, my time at Iridium was an incredible opportunity and a valueable introduction to my engineering
+            career.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/asu_logo.png" alt="Nodejs Image." title="Arizona State University">
+          <p>
+            Since fall 2020, I've been honing my technical skills at ASU, having gone from someone with a simple
+            interest in technology to nearing
+            completion of my Master's degree this December 2024. I'm confident ASU's computer science curriculum has
+            provided me the technical skills
+            to transition from being a student to a well-versed software developer.
+          </p>
+          Below is a list of my achievements:
+          <ul>
+            <li>Bachelor's of Compueter Science - Magna Cum Laude</li>
+            <li>Master's of Compueter Science - Upcomming December 2024</li>
+            <li>GPA: 3.7</li>
+            <li>Completion of web-development track, receiving 4 certifications</li>
+            <ul>
+              <li>Arizona State University - Web Development Program</li>
+              <li>The Global Tech Experience - Intercultu ral Skills</li>
+              <li>Web Development with Javascripts & APIs</li>
+              <li>Web Development with HTML, CSS, Bootstrap</li>
+            </ul>
+            <li>Some Relevent Courses</li>
+            <ul>
+              <li>Tech Skills: data structues and algorithms, theoretical computer science, combinatorical algorithms
+              </li>
+              <li>Advanced Programming: software security, cloud computing, statistical machine learning</li>
+              <li>Industry Operations: software proj/process/qual mgt, software QA and testing, software engineering
+              </li>
+              <li>Other industry fields: embedded systems, operating systems, network forensics, mobile app dev</li>
+              <li>Mathematics: calculus I, II, III, linear algebra, discrete mathematics, quantum computing</li>
+            </ul>
+          </ul>
+          <p>
+            My time at ASU has been truely rewarding. I've made valueable connections, joined various clubs, and
+            attendedseminars discussing
+            cutting edge technology. With that being said, I'm excited for what the future holds and a chance to apply
+            the skills I've
+            developed as a student.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright: Ian Oxley
-  </div>
-  <!-- Copyright -->
-</footer>
+  <!-- Projects section -->
+  <div id="projects-target"> </div>
+  <div class="projects">
+    <h1>Projects</h1>
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar for dropdown menu -->
+        <div class="col-md-6">
+          <div class="custom-list-group">
+            <div id="collapseContainer">
+              <a href="#perryscopeDesc" data-bs-toggle="collapse" aria-expanded="true" aria-controls="perryscopeDesc"
+                class="custom-list-item active" data-target="Perryscope/perryscope.html"
+                onclick="handleProjectClick(event, this)">
+                PerryScope
+              </a>
+              <div class="collapse multi-collapse show" id="perryscopeDesc" data-bs-parent="#collapseContainer">
+                A humble Perry the Platipus kaleidoscope, made up of only triangles and changes color based on the
+                shape's position on the canvas.
+                The platipuses rotate about the center, constantly updating both a clockwise and counter-clockwise
+                theta for the shape's motion.
+                A very basic WebGL program I created as an introduction to Computer Graphics.
+              </div>
+              <a href="#spawnDesc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="spawnDesc"
+                class="custom-list-item" data-target="Spawn/spawn.html" onclick="handleProjectClick(event, this)">
+                Cube Spawner
+              </a>
+              <div class="collapse multi-collapse" id="spawnDesc" data-bs-parent="#collapseContainer">
+                This application spawns a number of spinning cubes, fading as they fly. The number of cubes, cube
+                size, and flying speed can be adjusted using the sliders.
+                Also pauses when the middle square is clicked. This application tested my knowledge with matrixes,
+                as the canvas exists on a 3D plane
+                and the motion of the cubes is dependent on both a translation matrix and rotation matrix.
+              </div>
+              <a href="#bouncingDesc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="bouncingDesc"
+                class="custom-list-item" data-target="BouncingShape/BounchingShape.html"
+                onclick="handleProjectClick(event, this)">
+                Bouncing in a Box
+              </a>
+              <div class="collapse multi-collapse" id="bouncingDesc" data-bs-parent="#collapseContainer">
+                I created a box and inside is an erratic shape trying to escape, morphing as it does so. You can
+                use mousy iteractions to view the canvas from
+                other angles. The application focuses on shading elements, as it utilizes phong shading methods to
+                give it a realistic look, contains functions to
+                alter the shape's material, and the ability to change the light source's location. Programming
+                this application provided me advanced knowledge
+                of working in 3D space through the mousey interaction, construction of shape and outline cube, and
+                translation matrixes for X, Y, and Z planes.
+              </div>
+              <a href="#texturedDesc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="texturedDesc"
+                class="custom-list-item" data-target="Textures/textures.html" onclick="handleProjectClick(event, this)">
+                Textured Sliding
+              </a>
+              <div class="collapse multi-collapse" id="texturedDesc" data-bs-parent="#collapseContainer">
+                Here we have a wooden shape gliding across a metal floor within a green space. This project
+                contains similar functions to the previous one, except
+                the materials are textured using png files and the shapes are constructed differently. The green
+                background is created by surrounding the camera with
+                a green box shape and everything inside. This application challenged me to think differently about
+                shapen construction, as the shapes are now constructed
+                with a more dynamic texture as opposed to a solid color.
+              </div>
+              <a href="#matchDesc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="matchDesc"
+                class="custom-list-item" data-target="MatchGame/index.html" onclick="handleProjectClick(event, this)">
+                Matching Game
+              </a>
+              <div class="collapse multi-collapse" id="matchDesc" data-bs-parent="#collapseContainer">
+                A fun little matching game, containing sound effects, smooth annimations, proper game logic, and
+                tracking score. This application was the final part of my web development
+                journey, as it thurougly tested my knowledge with the javascript side of web development.
+              </div>
+              <a href="#portfolioDesc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="portfolioDesc"
+                class="custom-list-item" data-target="index.html" onclick="handleProjectClick(event, this)">
+                My Portfolio
+              </a>
+              <div class="collapse multi-collapse" id="portfolioDesc" data-bs-parent="#collapseContainer">
+                My portfolio page! Thanks for visiting :)
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content area for displaying the selected project -->
+        <div class="col-md-6">
+          <iframe id="project-iframe" src="Perryscope/perryscope.html" width="100%" height="600px"
+            style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="extras">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>NashorStats</h2>
+          </div>
+          <div class="col-md-5">
+            <a href="https://github.com/jioxli">
+              <img src="img/git_logo.png" alt="GitHub Logo" title="GitHub Link">
+            </a>
+            <img src="img/nodejs.png" alt="Nodejs Image." title="Node.js">
+            <img src="img/reactjs.png" alt="Reactjs Image." title="React">
+            <img src="img/HTML.png" alt="HTML Image." title="HTML 5">
+            <img src="img/postgresql.png" alt="PostgreSQL Image." title="PostgreSQL">
+            <img src="img/javascript.png" alt="JavaScript Image." title="JavaScript">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Nashorstats is an application which displays information about esports teams and performs in depth
+              analytics on which objective impact the game's outcome
+              the most. Nashorstats started out as an idea to determine which statistics are correlated the most
+              with winning the game, but as time went on
+              we became ambitious and implemented an account system, direct admin database access, and a pretty GUI.
+            </p>
+            <p>
+              We utilized a technology framework called the PERN (Postgres, Express, React, Node.js), which allowed
+              us to make calls directly to a PostgreSQL
+              database directly from our website. These requests were handled by Node.js backend, and the received
+              responses would be reflected immediately
+              by the react based interface. This project was incredibly rewarding, enhanced my knowledge on web
+              services, database management, react, and working
+              on large scale applications.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/DltdvcBzsqY"
+                title="CSE 412 Fall 2022 - Final Project Video Demonstration" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extras">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Construction Simulator</h2>
+          </div>
+          <div class="col-md-5">
+            <a href="https://github.com/ETBIMlab/AR-Scheduling-Simulation">
+              <img src="img/git_logo.png" alt="GitHub Logo" title="GitHub Link">
+            </a>
+            <img src="img/CSharp.png" alt="C Sharp Image." title="C#">
+            <img src="img/Unity.png" alt="Unity Image." title="Unity">
+            <img src="img/Hololens.png" alt="Microsoft Hololens Image." title="Microsoft Hololens">
+            <img src="img/JIRA.png" alt="JIRA Image." title="JIRA">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              The construction simulator provides a realistic scenario for users to work their way through on a
+              Microsoft Hololens 2, where the user can
+              interact with the environment, use voice recognition to make actions, and see visuals and sounds to
+              reflect the success or failure of their
+              decision. All of the users actions are collected as data so professors and researchers can evaluate their
+              performance. I was responsible for
+              building the backend of the application, ensuring the logic functioned properly, tracking user data, and
+              conducting extensive testing.
+            </p>
+            <p>
+              As a team, we utilized JIRA to create a project timeline, track sprint velocity, and meet up weekly to
+              discuss write a sprint retrospective and
+              reflect. At the end of the project, I had the pleasure to present this with my team at ASU's Fall 2023
+              Capstone Fair, where we bought a
+              Hololens for visitors to try our application.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/TnPbvVA9SEM"
+                title="Construction Management - ASU PhD ETBIM Hololens 2 Based Construction Simulator" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extras">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Photo Album App</h2>
+          </div>
+          <div class="col-md-5">
+            <a href="https://github.com/IOxley02/Photo-Album">
+              <img src="img/git_logo.png" alt="GitHub Logo" title="GitHub Link">
+            </a>
+            <img src="img/nodejs.png" alt="Nodejs Image." title="Node.js">
+            <img src="img/reactjs.png" alt="Reactjs Image." title="React">
+            <img src="img/HTML.png" alt="HTML5 Image." title="HTML 5">
+            <img src="img/javascript.png" alt="JavaScript Image." title="JavaScript">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>I have a lot of photos, and to be honest, looking through my phone to find my favorite photos takes a
+              very long time. I needed a way to
+              sort through them, but rather than using my phone's built in functions, I thought I should develop my own
+              album app, because that's how
+              programmers operate.
+            </p>
+            <p>
+              This is a full-stack application, developed using javascript and react as the frontend and node.js as a
+              backend.
+              Node.js can obtain necessary information about the photos stored locally on my computer. Once it has all
+              the info, it uses javascript to
+              write the html code, making it for me to update the album in the future. In addition, the application has
+              a favorites feature, making it
+              very easy for me to find my favorite photos in the future.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/HMYw8QPA0G0" title="album demo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extras">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>AWS Image Classification</h2>
+          </div>
+          <div class="col-md-5">
+            <img src="img/aws_logo.png" alt="AWS Image." title="AWS">
+            <img src="img/lambda.png" alt="AWS Lambda Image." title="AWS Lambda">
+            <img src="img/EC2.png" alt="AWS EC2 Image." title="AWS EC2">
+            <img src="img/flask.png" alt="Flask Image." title="Python Flask">
+            <img src="img/docker_logo.png" alt="Docker Image." title="Docker">
+            <img src="img/torch.png" alt="Torch Image." title="PyTorch">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>I constructed an advanced AWS system (as denoted by the figure) which performs image classification based
+              on an image sent to the web tier.
+              These requests are processed by a convolution neural network (CNN) model in an app tier, which has my own
+              implementation of auto scaling based
+              on demand. All results are also output to an S3 bucket for safe keeping and logging reasons.
+            </p>
+            <p>
+              In addition, I programmed a similar application using AWS Lambda instead of S3, where it would instead
+              take a request containing an MP4 file, utilize
+              FFmpeg to split the video into frames, and then conduct image classification based on the frames
+              extracted. To deploy this application, I had to construct
+              a dockerfile to create a docker image with FFmpeg on it to properly split the video.
+            </p>
+            <p>
+              The CNN model was developed with PyTorch, utilizing proper train testing data, and thurougly evaluated and
+              fine tuned using G-score calculations.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container">
+              <img src="img/AWS_Project.png" alt="AWS Project Image." title="Project Diagram">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Script bootstrap bundle -->
-		 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	
-  </body>
+    <!-- Contact Section -->
+    <div id="contact-target"> </div>
+    <div class="contact">
+      <!--Header -->
+      <div class="container">
+        <h1>Contact</h1>
+        <!-- Buttons -->
+        <div class="icons">
+          <div class="row">
+            <div class="col-md-6 col-xl-3">
+              <p>E-mail:</p>
+              <a href="mailto:ioxley@asu.edu" type="button" class="btn btn-light btn-lg">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <p>Phone:</p>
+              <a href="tel:+1480-352-4731" type="button" class="btn btn-light btn-lg">
+                <i class="bi bi-telephone"></i>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <p>Linkedin:</p>
+              <button type="button" class="btn btn-light btn-lg"
+                onclick="window.location.href='https://www.linkedin.com/in/ian-oxley-9a3bb721b/';">
+                <i class="bi bi-linkedin"></i>
+              </button>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <p>GitHub:</p>
+              <button type="button" class="btn btn-light btn-lg"
+                onclick="window.location.href='https://github.com/IOxley02/';">
+                <i class="bi bi-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Ian Oxley
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Script bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
 </html>

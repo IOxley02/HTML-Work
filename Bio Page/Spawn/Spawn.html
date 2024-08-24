@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <!--IAN OXLEY-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<!-- Create a title in the browser Tab  -->
+<title>Assignment 2 - Ian Oxley</title>
+   
+<!-- **VERTEX SHADER** -->
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+ 
+
+attribute  vec4 vPosition;
+attribute  vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 modelView;
+uniform vec4 translate;
+
+void main() 
+{
+    fColor = vColor;
+    gl_Position = modelView * vPosition;
+
+    //creates the fade effect as the objects reach the edge of the screen
+    float xCol = abs(gl_Position.x);
+	float yCol = abs(gl_Position.y);
+    if(xCol >= yCol) {
+        fColor = vec4(vColor[0] + xCol, vColor[1] + xCol, vColor[2] + xCol, 1.0);
+    } else {
+        fColor = vec4(vColor[0] + yCol, vColor[1] + yCol, vColor[2] + yCol, 1.0);
+    }
+} 
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+   
+varying vec4 fColor;
+
+void
+main()
+{
+    gl_FragColor = fColor;
+}
+</script>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="Spawn.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<style>
+    body
+    {
+        font-style: normal;
+        font-family: sans-serif;
+        color: white;
+        background-color: #292929;
+        padding: 0 1em;
+        line-height: 1.25em;
+    }
+    </style>
+
+<!-- Bootstrap CSS -->
+
+</head> 
+<body>
+
+<canvas id="gl-canvas" width="500" height="500" style="border:2px solid #000000;">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+<div class = "container">
+    <div class="row">
+        <div class= "col">
+            <div class="cubesSlider">
+                Num of Cubes: <output></output>
+                <input type="range" min="10" max="50" value="10" class="slider" id="cubeRange">
+            </div>
+        </div>
+        <div class= "col">
+            <div class="sizeSlider">
+                Size: <output></output>
+                <input type="range" min="10" max="100" value="10" class="slider" id="sizeRange">
+            </div>
+        </div>
+        <div class= "col">
+            <div class="speedSlider">
+                Speed: <output></output>
+                <input type="range" min="10" max="100" value="10" class="slider" id="speedRange">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

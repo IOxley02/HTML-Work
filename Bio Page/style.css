@@ -18,7 +18,7 @@ header#hero {
   text-shadow: 2px 2px 5px black;
 }
 /*Properties for the text in the hero image */
-.hero h3 {
+.hero h2 {
   font-size: 10vh;
 }
 
@@ -44,14 +44,14 @@ body {
 }
 
 /*Creates the header at the top of the each section */
-h2{
+h1{
   position: relative;
   text-align: center;
   margin: 30px;
   margin-bottom: 15px;
   margin-top: 50px;
 }
-h3{
+h2{
   position: relative;
   text-align: center;
   margin-top: -10px;
@@ -61,102 +61,146 @@ h3{
 }
 
 /*Mission image properties */
-.mission img {
+.introduction img {
   width: 100%;
   height: 350px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
   object-position: center;
-  overflow: hidden;
+  display: block;
 }
 
-.mission p {
+.introduction p {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 20px;
 }
 
-.why {
-  margin-top: 10vh;
-  position: relative;
-  width: 100%;
-  height: 130vh;
-  background: black;
-  overflow: hidden;
-}
-.why canvas {
-  height: 130vh;
-  width: 100%;
-}
-.why-text{
-  top: -125vh;
-  height: 35vh;
-  margin-bottom: -45vh;
-  position: relative;
-}
-.why h3{
-  background: black;
-  border-radius: 50%;
-  font-size: 7vh;
-  padding: 5%;
-}
-.why p {
-  background: black;
-  border-radius: 20%;
-  font-size: 13px;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.skills {
+.expertise {
   background-color: #4C4C4C;
   border-radius: 50px;
   margin: 5%;
+  align-items: center;
+  padding-top: 10px;
 }
 
 /*Skills image properties */
-.skills img {
+.expertise img {
   width: 100%;
   border-radius: 50%;
   height: 35vh;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out; /* Slower and smoother transition */
+}
+
+.expertise img:hover {
+  transform: scale(1.1);
 }
 
 /*Skills text properties */
-.skills p {
+.expertise p {
   margin: 5vh;
-  font-size: 2.5vh;
+  font-size: 20px;
   position: relative;
   text-align: center;
 }
-/*Defines the properties of the carousel and image position */
-.carousel-item img {
+
+.projects h2 {
+  text-align: left;
+}
+
+.custom-list-item {
+  display: block; /* Ensure the link is block-level for larger clickable area */
+  padding: 25px; /* Increase padding for more space */
+  font-size: 1.25rem; 
+  border-radius: 0.5rem; 
+  background-color: #f8f9fa98; 
+  color: white; 
+  text-align: left;
+  margin-bottom: 10px; 
+  transition: background-color 0.3s, color 0.3s; 
+  cursor: pointer; 
+  text-decoration: none;
+}
+
+.custom-list-item:hover {
+  background-color: #e9ecef; /* Darker background color on hover */
+  color: #212529; /* Darker text color on hover */
+}
+
+.custom-list-item.active {
+  background-color: #007bff; /* Active item background color */
+  color: #fff; /* Active item text color */
+}
+
+.col-md-5 {
+  text-align: right;
+}
+
+.experience-logos {
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+.experience-logos img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding: 30px; /* Adjust this value for the desired padding between containers */
+}
+
+.experience .container {
+  padding: 10px; /* Adjust this value for padding inside the container */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+.extras {
+  background-color: #4C4C4C;
+  border-radius: 10px;
+  border: 2px solid white; 
+  align-items: center;
+  margin: 50px;
+  padding-left: 20px;
+}
+.extras img {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  margin-top: 15px;
   object-fit: cover;
-  object-position: center;
-  height: 85vh;
-  width: 40vw;
+}
+.extras img:hover {
+  transform: scale(1.1);
+}
+
+.extras a {
+  text-decoration: none;
+  color: inherit;
+}
+.video-container {
+  position: relative;
+  width: 95%;
+  padding-bottom: 56.25%;
+  margin-bottom: 10px;
+  height: 0;
   overflow: hidden;
 }
 
-/*Makes the images darker and more centered */
-.carousel-item:after {
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.3);
+.video-container iframe,
+.video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-/*Makes the carousel text more readable */
-.carousel-caption {
-  z-index: 1;
+.video-container img {
+  pointer-events: none; /* Disable hover effect */
 }
-
-/*Properties for the icons in contact */
 
 .icons {
   margin: 50px;
