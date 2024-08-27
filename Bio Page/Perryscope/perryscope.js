@@ -60,12 +60,12 @@ window.onload = function init()
 		vec2(-0.03, 0.03),		//Eye 2
 		vec2(-0.06, 0.03),
 		vec2(-0.03, 0),
-		vec2(-0.04, 0.01),		//Eye Pupil 1
-		vec2(-0.05, 0.01),
-		vec2(-0.05, 0.02),
-		vec2(-0.04, 0.02),		//Eye Pupil 2
-		vec2(-0.05, 0.02),
-		vec2(-0.04, 0.01),
+		vec2(-0.035, 0.015),		//Eye Pupil 1
+		vec2(-0.045, 0.015),
+		vec2(-0.045, 0.025),
+		vec2(-0.035, 0.025),		//Eye Pupil 2
+		vec2(-0.045, 0.025),
+		vec2(-0.035, 0.015),
 		vec2(-0.1, 0),		//First part of the beak
 		vec2(-0.1, -0.06),
 		vec2(-0.14, 0),
