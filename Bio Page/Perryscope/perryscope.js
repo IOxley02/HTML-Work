@@ -20,7 +20,9 @@ var baseColors = [
     vec3(0.4, 0.5, 0.5),		//light blue
 	vec3(0.1, 0.5, 0.5),		//dark blue
     vec3(1.0, 0.75, 0.1),		//yellow
-    vec3(1.0, 0.9, 0.5)			//light yellow
+    vec3(1.0, 0.9, 0.5),		//light yellow
+	vec3(0, 0, 0),				//black
+	vec3(1, 1, 1)				//white
 ];
 
 
@@ -52,16 +54,28 @@ window.onload = function init()
 		vec2(0.1, -0.06),		//second body triangle
 		vec2(-0.1, 0.06),
 		vec2(-0.1, -0.06),
-		vec2(-0.1, 0),		//First part of the tail
+		vec2(-0.03, 0),		//Eye 1
+		vec2(-0.06, 0),
+		vec2(-0.06, 0.03),
+		vec2(-0.03, 0.03),		//Eye 2
+		vec2(-0.06, 0.03),
+		vec2(-0.03, 0),
+		vec2(-0.04, 0.01),		//Eye Pupil 1
+		vec2(-0.05, 0.01),
+		vec2(-0.05, 0.02),
+		vec2(-0.04, 0.02),		//Eye Pupil 2
+		vec2(-0.05, 0.02),
+		vec2(-0.04, 0.01),
+		vec2(-0.1, 0),		//First part of the beak
 		vec2(-0.1, -0.06),
 		vec2(-0.14, 0),
-		vec2(-0.14, 0),		//Second part of the tail
+		vec2(-0.14, 0),		//Second part of the beak
 		vec2(-0.1, -0.06),
 		vec2(-0.14, -0.06),
-		vec2(-0.14, 0),		//First part of the tail 2
+		vec2(-0.14, 0),		//First part of the beak 2
 		vec2(-0.14, -0.06),
 		vec2(-0.18, 0),
-		vec2(-0.18, 0),		//Second part of the tail 2
+		vec2(-0.18, 0),		//Second part of the beak 2
 		vec2(-0.14, -0.06),
 		vec2(-0.18, -0.06),
 		vec2(0.1, 0),		//First part of the tail
@@ -156,7 +170,7 @@ function render() {
 
 	//draw the center 
 	gl.uniform2fv(centersLoc, centers[0]);
-	gl.drawArrays(gl.TRIANGLES, 0, 50);
+	gl.drawArrays(gl.TRIANGLES, 0, 62);
 	
 	//counterclockwise rotation for the replica shapes
 	theta2 += (true? deltaRadians : -deltaRadians);
@@ -165,7 +179,7 @@ function render() {
 	//draw the replicas
 	for(var i = 1; i < centers.length; i++) {
 		gl.uniform2fv(centersLoc, centers[i]);
-		gl.drawArrays(gl.TRIANGLES, 0, 50);
+		gl.drawArrays(gl.TRIANGLES, 0, 62);
 	}
 
 	//start the animation
@@ -182,6 +196,18 @@ colors = [
         baseColors[0],
 		baseColors[1],
 		baseColors[1],
+		baseColors[4],
+		baseColors[4],
+		baseColors[4],
+		baseColors[4],
+		baseColors[4],
+		baseColors[4],
+		baseColors[5],
+		baseColors[5],
+		baseColors[5],
+		baseColors[5],
+		baseColors[5],
+		baseColors[5],
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
