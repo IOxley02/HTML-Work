@@ -20,7 +20,6 @@ var baseColors = [
     vec3(0.4, 0.5, 0.5),		//light blue
 	vec3(0.1, 0.5, 0.5),		//dark blue
     vec3(1.0, 0.75, 0.1),		//yellow
-    vec3(0.3, 0.1, 0.0),		//brown
     vec3(1.0, 0.9, 0.5)			//light yellow
 ];
 
@@ -53,18 +52,36 @@ window.onload = function init()
 		vec2(0.1, -0.06),		//second body triangle
 		vec2(-0.1, 0.06),
 		vec2(-0.1, -0.06),
-		vec2(-0.1, -0.06),		//Beginning of the beak
-		vec2(-0.2, 0),
-		vec2(-0.1, 0.06),
-		vec2(-0.1, 0.06),		//Detective hat
-		vec2(0, 0.1),
-		vec2(0.1, 0.06),
-		vec2(0.1, 0.06),		//First part of the tail
+		vec2(-0.1, 0),		//First part of the tail
+		vec2(-0.1, -0.06),
+		vec2(-0.14, 0),
+		vec2(-0.14, 0),		//Second part of the tail
+		vec2(-0.1, -0.06),
+		vec2(-0.14, -0.06),
+		vec2(-0.14, 0),		//First part of the tail 2
+		vec2(-0.14, -0.06),
+		vec2(-0.18, 0),
+		vec2(-0.18, 0),		//Second part of the tail 2
+		vec2(-0.14, -0.06),
+		vec2(-0.18, -0.06),
+		vec2(0.1, 0),		//First part of the tail
 		vec2(0.1, -0.06),
 		vec2(0.14, 0),
 		vec2(0.14, 0),		//Second part of the tail
-		vec2(0.2, 0.08),
-		vec2(0.2, -0.08),
+		vec2(0.1, -0.06),
+		vec2(0.14, -0.06),
+		vec2(0.14, 0),		//First part of the tail 2
+		vec2(0.14, -0.06),
+		vec2(0.18, 0),
+		vec2(0.18, 0),		//Second part of the tail 2
+		vec2(0.14, -0.06),
+		vec2(0.18, -0.06),
+		vec2(0.18, 0),		//First part of the tail 3
+		vec2(0.18, -0.06),
+		vec2(0.22, 0),
+		vec2(0.22, 0),		//Second part of the tail 3
+		vec2(0.18, -0.06),
+		vec2(0.22, -0.06),
 		vec2(0.1, -0.06),		//back foot
 		vec2(0.115, -0.1),
 		vec2(0.085, -0.1),
@@ -139,7 +156,7 @@ function render() {
 
 	//draw the center 
 	gl.uniform2fv(centersLoc, centers[0]);
-	gl.drawArrays(gl.TRIANGLES, 0, 31);
+	gl.drawArrays(gl.TRIANGLES, 0, 50);
 	
 	//counterclockwise rotation for the replica shapes
 	theta2 += (true? deltaRadians : -deltaRadians);
@@ -148,7 +165,7 @@ function render() {
 	//draw the replicas
 	for(var i = 1; i < centers.length; i++) {
 		gl.uniform2fv(centersLoc, centers[i]);
-		gl.drawArrays(gl.TRIANGLES, 0, 31);
+		gl.drawArrays(gl.TRIANGLES, 0, 50);
 	}
 
 	//start the animation
@@ -168,26 +185,47 @@ colors = [
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
-		baseColors[3],
-		baseColors[3],
-		baseColors[3],
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
 		baseColors[2],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
-		baseColors[4],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[2],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[0],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
+		baseColors[1],
     ];
 }
